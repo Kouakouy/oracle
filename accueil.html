@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <section>
+        <div class="bg">
+            <header>
+                <a href="#" class="logo">Oracle@Bat</a>
+                <ul class="navigation">
+                    <li><a href="#" class="active">accueil</a></li>
+                    <li><a href="propos.html" target="target">A propos</a></li>
+                    <li><a href="service.html" target="target">service</a></li>
+                    <li><a href="contact.html" target="target">contact</a></li> 
+                </ul>
+            </header>
+        </div>
+        <div class="contenu">
+            <div class="text-boite">
+                <h2>Tous vos services immobiliers</h2>
+                <p>Oracle@Bat est une agence immobilière créer en 2013, notre agence est compter comme l'une des meilleurs agences immobilières du pays.
+                    Notre but est de satisfaire toute personne a la recherche <strong>d'une maison, d'un terrain et d'un appartement</strong> dans tout l'etendue du territoire.
+                    pour satisfaire la clientèle nous avions mis a la disposition de toutes personnes desireux de nous conteacter en toute simplicité. Notament nos services sont a bon pris garantie sur 3 mois.</p>
+               
+                <a href="#" class="btn"><span></span> savoir plus</a>
+            </div>
+            <div class="imgboite">
+                <img src="image/appart5.jpg" alt="" class="imgappart">
+            </div>
+            <ul class="tab">
+                <li data-text="1"><img src="logo/appart.jpg" alt="" onclick="imageslider('image/appart5.jpg'),coleurf('')"></li>
+                <li data-text="2"><img src="image/terrain.jpg" alt="" onclick="imageslider('image/terrain3.jpg'),coleurf('#c9275b')"></li>
+                <li data-text="3"><img src="logo/maison.jpg" alt="" onclick="imageslider('image/maison1.jpg'),coleurf('#6c9330')"></li>
+                <li data-text="4"><img src="logo/villa.jpg" alt=""onclick="imageslider('image/villa1.jpg'),coleurf('#bd0101')"></li>
+            </ul>
+        </div>
+        <script>
+            function imageslider(image){
+                document.querySelector('.imgappart').src = image
+            }
+            function coleurf(couleur){
+                document.querySelector('.bg').style.background = couleur
+            }
+        </script>
+    </section>
+    <footer id="name">
+        <p>webmaster: KOUAKOU ESPERANCE YANNICK</p>
+       <address>
+           14bp 1450 abidjan 14
+       </address>
+       <address>05 86 01 25 73 </address>
+   </footer>
+</body>
+</html>
